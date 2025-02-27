@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: "SUSE", sans-serif;
+    text-align: center;
+}
+
+/* Hero */
+#hero {
+    background-image: url("../images/nigeria-image.png");
+    /* background-image: url("https://i.postimg.cc/N0XLF26V/nigeria-image.png"); */
+    background-size: cover;
+    height: 32em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero hgroup .hero-title {
+    background: #004697;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    padding: 0.1em 0.4em;
+    width: max-content;
+}
+
+#hero hgroup .hero-text {
+    background: #3975C5;
+    width: 21.5em;
+    border-radius: 0.4em;
+    padding: 0.3em 1.2em;
+    margin: 1em auto 0;
+}
+
+/* Activities */
+#activities {
+    background-color: #006CD8;
+    padding: 2em 0;
+    color: #051c36;
+}
+
+#activities #activities-house {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+/* Activities Image */
+#activities #activities-house article figure {
+    margin: 0;
+}
+
+#activities #activities-house article figure .activities-img {
+    border: #190E6F 0.2em solid;
+    border-radius: 100%;
+    width: 12.5em;
+    height: 12.5em;
+}
+
+#activities #activities-house article hgroup .activities-h2 {
+    margin: 0.7em auto;
+    width: 10em;
+}
+
+#activities #activities-house article hgroup .activities-h3 {
+    width: 19em;
+    margin: auto;
+}
+
+/* Footer */
+#david {
+    max-width: 37.5em;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #3975C5;
+    justify-content: space-around;
+    padding: 1.8em 1.2em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.6em 0 0 #190E6F;
+}
+
+/* Footer Image */
+#david figure {
+    margin: 0;
+    width: 50%;
+}
+
+#david figure .david-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6em;
+}
+
+/* Footer Details */
+#david .david-text {
+    width: 13em;
+    color: #051c36;
+}
+
+#david .david-text .david-h4 {
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+    #hero hgroup .hero-text {
+        width: 60%;
+    }
+
+    #david {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    #activities #activities-house article figure .activities-img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #activities #activities-house article hgroup .activities-h2 {
+        width: 65%;
+    }
+    
+    #activities #activities-house article hgroup .activities-h3 {
+        width: 80%;
+    }
+
+    #david {
+        max-width: 70%;
+    }
+
+    #david figure {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero hgroup .hero-title {
+        width: 52%;
+    }
+}
